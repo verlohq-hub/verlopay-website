@@ -920,11 +920,14 @@ label.radio-pill.sel{animation:pillRipple 0.4s ease-out}
       </div>
       <div>
         <form action="https://formspree.io/f/xlgowjyv" method="POST">
+        <input type="hidden" name="source" value="Verlo Waitlist">
+        <input type="hidden" name="product" value="Verlo">
+          
         <div class="waitlist-form" id="waitlist-form-container">
           <div id="form-fields">
             <div class="form-group">
               <label for="wl-name">Your name</label>
-              <input type="text" id="wl-name" name="name" placeholder="First name" autocomplete="given-name" />
+              <input type="text" id="wl-name" name="name" placeholder="First name" autocomplete="given-name" required />
             </div>
             <div class="form-group">
               <label for="wl-email">Email address</label>
@@ -933,30 +936,30 @@ label.radio-pill.sel{animation:pillRipple 0.4s ease-out}
             <div class="form-group">
               <label>What best describes you?</label>
               <div class="radio-pills" id="role-pills">
-                <label class="radio-pill"><input type="radio" name="role" value="fb-ig-seller"><span class="rpd"></span><span class="rpt">Facebook, Instagram &amp; TikTok seller</span></label>
-                <label class="radio-pill"><input type="radio" name="role" value="freelancer"><span class="rpd"></span><span class="rpt">Freelancer</span></label>
-                <label class="radio-pill"><input type="radio" name="role" value="service"><span class="rpd"></span><span class="rpt">Service provider</span></label>
-                <label class="radio-pill"><input type="radio" name="role" value="creator"><span class="rpd"></span><span class="rpt">Creator</span></label>
-                <label class="radio-pill"><input type="radio" name="role" value="small-biz"><span class="rpd"></span><span class="rpt">Small business owner</span></label>
-                <label class="radio-pill"><input type="radio" name="role" value="buyer"><span class="rpd"></span><span class="rpt">Buyer</span></label>
-                <label class="radio-pill"><input type="radio" name="role" value="other"><span class="rpd"></span><span class="rpt">Other</span></label>
+                <label class="radio-pill"><input type="radio" name="role" value="FB-IG-Seller"><span class="rpd"></span><span class="rpt">Facebook, Instagram &amp; TikTok seller</span></label>
+                <label class="radio-pill"><input type="radio" name="role" value="Freelancer"><span class="rpd"></span><span class="rpt">Freelancer</span></label>
+                <label class="radio-pill"><input type="radio" name="role" value="Service"><span class="rpd"></span><span class="rpt">Service provider</span></label>
+                <label class="radio-pill"><input type="radio" name="role" value="Creator"><span class="rpd"></span><span class="rpt">Creator</span></label>
+                <label class="radio-pill"><input type="radio" name="role" value="Small-biz"><span class="rpd"></span><span class="rpt">Small business owner</span></label>
+                <label class="radio-pill"><input type="radio" name="role" value="Buyer"><span class="rpd"></span><span class="rpt">Buyer</span></label>
+                <label class="radio-pill"><input type="radio" name="role" value="Other"><span class="rpd"></span><span class="rpt">Other</span></label>
               </div>
             </div>
             <div class="form-group">
               <label for="wl-country">Country</label>
               <select id="wl-country" name="country" required>
                 <option value="">Select your country</option>
-                <option value="uk">United Kingdom</option>
-                <option value="us">United States</option>
-                <option value="ca">Canada</option>
-                <option value="eu">European Union</option>
-                <option value="au">Australia</option>
-                <option value="af">Africa</option>
-                <option value="other">Other</option>
+                <option value="UK">United Kingdom</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="EU">European Union</option>
+                <option value="AU">Australia</option>
+                <option value="AF">Africa</option>
+                <option value="Other">Other</option>
               </select>
             </div>
             <div class="privacy-row">
-              <input type="checkbox" id="privacy-agree" name="privacy" value="agreed" required />
+              <input type="checkbox" id="privacy-agree" name="privacy" value="Agreed" required />
               <label for="privacy-agree" class="privacy-text">
                 I agree to Verlo's <a href="javascript:void(0)" onclick="openPage('privacy.html')">Privacy Policy</a> and <a href="javascript:void(0)" onclick="openPage('terms.html')">Terms of Use</a>. By joining, you consent to us storing your name, email, and preferences to send product updates and early access notifications. We will never sell your data. You can unsubscribe at any time.
               </label>
