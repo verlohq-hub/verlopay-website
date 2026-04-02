@@ -919,6 +919,7 @@ label.radio-pill.sel{animation:pillRipple 0.4s ease-out}
         </div>
       </div>
       <div>
+        <form action="https://formspree.io/f/xlgowjyv" method="POST">
         <div class="waitlist-form" id="waitlist-form-container">
           <div id="form-fields">
             <div class="form-group">
@@ -943,7 +944,7 @@ label.radio-pill.sel{animation:pillRipple 0.4s ease-out}
             </div>
             <div class="form-group">
               <label for="wl-country">Country</label>
-              <select id="wl-country">
+              <select id="wl-country" name "country">
                 <option value="">Select your country</option>
                 <option value="uk">United Kingdom</option>
                 <option value="us">United States</option>
@@ -955,12 +956,13 @@ label.radio-pill.sel{animation:pillRipple 0.4s ease-out}
               </select>
             </div>
             <div class="privacy-row">
-              <input type="checkbox" id="privacy-agree" />
+              <input type="checkbox" id="privacy-agree" name="privacy" required />
               <label for="privacy-agree" class="privacy-text">
                 I agree to Verlo's <a href="javascript:void(0)" onclick="openPage('privacy.html')">Privacy Policy</a> and <a href="javascript:void(0)" onclick="openPage('terms.html')">Terms of Use</a>. By joining, you consent to us storing your name, email, and preferences to send product updates and early access notifications. We will never sell your data. You can unsubscribe at any time.
               </label>
             </div>
-            <button class="btn-waitlist" onclick="submitForm()">Get early access →</button>
+            <button type="submit" class="btn-waitlist">Get early access →</button>
+          </form>
             <p class="form-note"><strong>Launch pricing + priority support</strong> for the first 100 sellers</p>
           </div>
           <div class="form-success" id="form-success" role="alert" aria-live="polite">
