@@ -924,11 +924,11 @@ label.radio-pill.sel{animation:pillRipple 0.4s ease-out}
           <div id="form-fields">
             <div class="form-group">
               <label for="wl-name">Your name</label>
-              <input type="text" id="wl-name" placeholder="First name" autocomplete="given-name" />
+              <input type="text" id="wl-name" name="name" placeholder="First name" autocomplete="given-name" />
             </div>
             <div class="form-group">
               <label for="wl-email">Email address</label>
-              <input type="email" id="wl-email" placeholder="you@example.com" autocomplete="email" />
+              <input type="email" id="wl-email" name="email" placeholder="you@example.com" autocomplete="email" />
             </div>
             <div class="form-group">
               <label>What best describes you?</label>
@@ -944,7 +944,7 @@ label.radio-pill.sel{animation:pillRipple 0.4s ease-out}
             </div>
             <div class="form-group">
               <label for="wl-country">Country</label>
-              <select id="wl-country" name "country">
+              <select id="wl-country" name="country" required>
                 <option value="">Select your country</option>
                 <option value="uk">United Kingdom</option>
                 <option value="us">United States</option>
@@ -956,7 +956,7 @@ label.radio-pill.sel{animation:pillRipple 0.4s ease-out}
               </select>
             </div>
             <div class="privacy-row">
-              <input type="checkbox" id="privacy-agree" name="privacy" required />
+              <input type="checkbox" id="privacy-agree" name="privacy" value="agreed" required />
               <label for="privacy-agree" class="privacy-text">
                 I agree to Verlo's <a href="javascript:void(0)" onclick="openPage('privacy.html')">Privacy Policy</a> and <a href="javascript:void(0)" onclick="openPage('terms.html')">Terms of Use</a>. By joining, you consent to us storing your name, email, and preferences to send product updates and early access notifications. We will never sell your data. You can unsubscribe at any time.
               </label>
