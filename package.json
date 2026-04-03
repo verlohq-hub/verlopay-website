@@ -1,0 +1,13 @@
+{
+  "name": "verlopay-website",
+  "version": "1.0.0",
+  "description": "Verlo - Stop Getting Scammed When Buying or Selling Online",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "preview": "npx serve ."
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.0"
+  }
+}
